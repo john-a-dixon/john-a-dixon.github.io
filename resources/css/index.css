@@ -1,0 +1,37 @@
+/***************************************************GLOBALS***************************************************/
+* { /*Removes the default margins and padding and makes element sizing more accurate*/
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	flex-shrink: 0;
+}
+
+:root {
+	font-size: 16px;
+}
+
+#beerator {
+	display: none;
+}
+
+#personal-site > section {
+	height: 600px;
+	width: 100%;
+	background-color: red;
+	background-image: url('../image/banner.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-blend-mode: multiply;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+	color: white;
+}
+
+#self-image {
+	height: 450px;
+	width: 450px;
+	border-radius: 50%;
+}
