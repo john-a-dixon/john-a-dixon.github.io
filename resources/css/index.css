@@ -1,0 +1,66 @@
+/**************************************************Globals**************************************************/
+* { /*Removes the default margins and padding and makes element sizing more accurate*/
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	flex-shrink: 0;
+}
+
+:root {
+	font-size: 16px;
+}
+
+#beerator {
+	display: none;
+}
+/**************************************************Banner**************************************************/
+
+/*************************Profile Image*************************/
+
+#personal-site > section {
+	height: 600px;
+	width: 100%;
+	background-color: red;
+	background-image: url('../img/banner.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-blend-mode: multiply;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	color: white;
+}
+
+#self-image {
+	height: 450px;
+	width: 450px;
+	border-radius: 50%;
+}
+
+/*************************Introduction*************************/
+h1 {
+	font-size: 3rem;
+}
+
+
+/**************************************************Media Queries**************************************************/
+@media only screen and (max-width: 1200px) {
+	#personal-site > section {
+		flex-direction: column;
+	}
+}
+
+@media only screen and (max-width: 630px) {
+	#self-image {
+		height: 300px;
+		width: 300px;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	h1 {
+		font-size: 2rem;
+	}
+}
