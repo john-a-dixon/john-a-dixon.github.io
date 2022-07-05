@@ -8,6 +8,11 @@
 
 :root {
 	font-size: 16px;
+	--accent-color-one: #540D0D;
+	--accent-color-two: #ED9A9A;
+	--main-color: #D42222;
+	--accent-color-three: #542727;
+	--accent-color-four: #A11A1A;
 }
 
 #beerator {
