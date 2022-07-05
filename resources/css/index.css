@@ -15,8 +15,10 @@
 	--accent-color-four: #A11A1A;
 }
 
-#beerator {
-	display: none;
+.divider {
+	background-color: var(--accent-color-two);
+	height: 50%;
+	width: 2px;
 }
 /**************************************************Banner**************************************************/
 
@@ -25,7 +27,7 @@
 #personal-site > section {
 	height: 600px;
 	width: 100%;
-	background-color: red;
+	background-color: var(--main-color);
 	background-image: url('../img/banner.jpg');
 	background-position: center;
 	background-repeat: no-repeat;
@@ -34,7 +36,6 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
 	color: white;
 }
 
@@ -42,8 +43,13 @@
 	height: 450px;
 	width: 450px;
 	border-radius: 50%;
+	margin-right: 4%;
 }
 
+#intro {
+	width: 50%;
+	margin-left: 4%;
+}
 /*************************Introduction*************************/
 h1 {
 	font-size: 3rem;
