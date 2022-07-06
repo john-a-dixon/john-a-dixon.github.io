@@ -104,8 +104,10 @@ nav a:active {
 	background-color:aliceblue;
 }
 
+#dropdown div {
+	display: none;
+}
 /**************************************************Banner**************************************************/
-
 /*************************Profile Image*************************/
 #banner {
 	height: 600px;
