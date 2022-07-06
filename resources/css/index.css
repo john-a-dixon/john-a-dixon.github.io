@@ -101,17 +101,13 @@ nav a:active {
 #dropdown div {
 	position: absolute;
 	top: 65px;
-	width: 60px;
-	height: 70px;
+	right: 75px;
+	width: fit-content;
+	height: fit-content;
+	background-color: var(--main-color);
 }
 
-#dropdown:hover div {
-	display: block;
-}
-/*
-#dropdown:active div {
-	display: block;
-}*/
+#dropdown:hover div {display: block}
 /**************************************************Banner**************************************************/
 /*************************Profile Image*************************/
 #banner {
@@ -226,7 +222,6 @@ h1 {
 	#nav-links {display: none}
 	#dropdown {display: inline-block}
 	#dropdown button {margin-right: 15px}
-	/*8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888*/
 }
 
 @media only screen and (max-width: 745px) { 
@@ -254,6 +249,7 @@ h1 {
 		display: none;
 	}
 
+	main {top: 60px}
 	h1 {font-size: 3.3rem}
 	#intro h2 {font-size: 1.1rem}
 	#intro p {font-size: 1.1rem}
