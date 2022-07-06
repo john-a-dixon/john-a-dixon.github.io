@@ -78,6 +78,11 @@ nav a:hover {
 	text-decoration: underline;
 }
 
+nav a:active {
+	font-style: italic;
+	color: var(--accent-color-two)
+}
+
 /**************************************************Banner**************************************************/
 
 /*************************Profile Image*************************/
@@ -189,6 +194,10 @@ h1 {
 		margin-right: 0;
 		margin-top: 50px;
 	}
+}
+
+@media only screen and (max-width: 1000px) {
+
 }
 
 @media only screen and (max-width: 745px) { 
