@@ -107,7 +107,6 @@ nav a:active {
 	display: flex;
 	flex-direction: column;
 }
-#dropdown:active #dropdown-options {display: none;}
 
 #dropdown a {
 	margin: 10px 0px;
