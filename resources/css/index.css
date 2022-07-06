@@ -100,18 +100,23 @@ nav a:active {
 
 #dropdown div {
 	position: absolute;
-	top: 65px;
-	width: 60px;
-	height: 70px;
+	top: 60px;
+	right: 30px;
+	width: fit-content;
+	height: fit-content;
+	background-color: var(--main-color);
+	text-align: right;
+	padding: 10px;
 }
 
 #dropdown:hover div {
-	display: block;
+	display: flex;
+	flex-direction: column;
 }
-/*
-#dropdown:active div {
-	display: block;
-}*/
+
+#dropdown a {
+	margin: 10px 0px;
+}
 /**************************************************Banner**************************************************/
 /*************************Profile Image*************************/
 #banner {
@@ -225,7 +230,7 @@ h1 {
 	nav h2:after {content: ""}
 	#nav-links {display: none}
 	#dropdown {display: inline-block}
-	#dropdown button {margin-right: 30px}\#dropdown div {display: block} /*8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888*/
+	#dropdown button {margin-right: 15px}
 }
 
 @media only screen and (max-width: 745px) { 
@@ -233,8 +238,21 @@ h1 {
 }
 
 @media only screen and (max-width: 610px) { 
-	nav {justify-content: flex-end}
+	nav {
+		justify-content: flex-end;
+		height: 60px;
+	}
 	
+	#dropdown button {
+		height: 40px;
+		width: 40px;
+	}
+
+	#dropdown div {
+		top: 50px;
+		right: 30px;
+	}
+
 	#self-image {
 		height: 350px;
 		width: 350px;
@@ -245,6 +263,7 @@ h1 {
 		display: none;
 	}
 
+	main {top: 60px}
 	h1 {font-size: 3.3rem}
 	#intro h2 {font-size: 1.1rem}
 	#intro p {font-size: 1.1rem}
