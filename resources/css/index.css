@@ -185,7 +185,7 @@ h1 {
 /**************************************************Media Queries**************************************************/
 @media only screen and (max-width: 1400px) {
 	nav {justify-content: flex-start}
-	nav h2 {margin: 0px 40px}
+	nav h2 {margin: 0px 30px}
 	nav h2:after {content: "\00a0 \00a0 \00a0|"}
 }
 
@@ -221,36 +221,30 @@ h1 {
 	nav {justify-content: space-between}
 	#nav-links {display: none}
 	#dropdown {display: inline-block}
-	#dropdown button {margin-right: 40px;}
+	#dropdown button {margin-right: 30px;}
 }
 
 @media only screen and (max-width: 745px) { 
-	h1 {
-		font-size: 4.5rem;
-	}
+	h1 {font-size: 4.5rem}
 }
 
 @media only screen and (max-width: 610px) { 
+	nav {justify-content: flex-end}
+	
 	#self-image {
 		height: 350px;
 		width: 350px;
 	}
 
-	h1 {
-		font-size: 3.3rem;
+	nav h2 {
+		content: "";
+		display: none;
 	}
 
-	#intro h2 {
-		font-size: 1.1rem;
-	}
-	
-	#intro p {
-		font-size: 1.1rem;
-	}
-	
-	#intro p:nth-child(1) {
-		font-size: 1.3rem;
-	}
+	h1 {font-size: 3.3rem}
+	#intro h2 {font-size: 1.1rem}
+	#intro p {font-size: 1.1rem}
+	#intro p:nth-child(1) {font-size: 1.3rem}
 
 	#banner .divider-horz {
 		margin-top: 35px;
@@ -259,17 +253,9 @@ h1 {
 }
 
 @media only screen and (max-width: 450px) {
-	h1 {
-		font-size: 2.3rem;
-	}
-
-	#intro h2 {
-		font-size: 0.9rem;
-	}
-	
-	#intro p {
-		font-size: 0.9rem;
-	}
+	h1 {font-size: 2.3rem}
+	#intro h2 {font-size: 0.9rem}
+	#intro p {font-size: 0.9rem}
 	
 	#intro p:nth-child(1) {
 		margin-bottom: -10px;
