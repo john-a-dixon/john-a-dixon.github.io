@@ -92,7 +92,7 @@ nav a:active {
 	background-color:aliceblue;
 }
 
-#dropdown div {
+#dropdown-options {
 	position: absolute;
 	top: 60px;
 	right: 30px;
@@ -103,10 +103,11 @@ nav a:active {
 	padding: 10px;
 }
 
-#dropdown:hover div {
+#dropdown:hover #dropdown-options {
 	display: flex;
 	flex-direction: column;
 }
+#dropdown:active #dropdown-options {display: none;}
 
 #dropdown a {
 	margin: 10px 0px;
