@@ -13,7 +13,7 @@
 	--main-color: #D42222;
 	--accent-color-three: #542727;
 	--accent-color-four: #A11A1A;
-	--h1-text: 'DM Serif Display', serif;
+	--h1-text: 'Prata', serif;
 	--header-text: 'Josefin Sans', sans-serif;
 	--p-text: 'Cormorant Garamond', serif;
 }
@@ -30,19 +30,89 @@
 	width: 30%;
 }
 
-ul {
-	list-style-type: circle;
-}
+ul {list-style-type: circle}
 
-li {
-	margin-left: 25px;
-}
+li {margin-left: 25px}
 
 main {
-	background-color: #ED9A9A33;
+	background-color: var(--accent-color-three);
+	position: relative;
+	top: 75px;
 }
-/**************************************************Banner**************************************************/
+header {
+	height: 75px;
+	width: 100%;
+	position: fixed;
+	z-index: 3;
+}
 
+/**************************************************Nav**************************************************/
+nav {
+	height: 75px;
+	width: 100%;
+	background-color: var(--accent-color-one);
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+nav h2 {
+	font-family: var(--h1-text);
+	color: white;
+	margin-right: 30%;
+}
+
+nav a {
+	color: white;
+	font-family: var(--header-text);
+	margin: 0px 15px;
+	text-decoration: none;
+	font-size: 1.10rem;
+}
+
+nav a:hover {
+	text-decoration: underline;
+}
+
+nav a:active {
+	font-style: italic;
+	color: var(--accent-color-two)
+}
+
+#dropdown, #dropdown div, #banner .divider-horz {display: none}
+
+#dropdown button {
+	height: 50px;
+	width: 50px;
+	background-color: var(--accent-color-two);
+	background-image: url('../img/menu.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 80%;
+	border-color: transparent;
+	background-blend-mode: multiply;
+	border-radius: 100%;
+}
+
+#dropdown button:active {
+	background-color:aliceblue;
+}
+
+#dropdown div {
+	position: absolute;
+	top: 65px;
+	width: 60px;
+	height: 70px;
+}
+
+#dropdown:hover div {
+	display: block;
+}
+/*
+#dropdown:active div {
+	display: block;
+}*/
+/**************************************************Banner**************************************************/
 /*************************Profile Image*************************/
 #banner {
 	height: 600px;
@@ -75,7 +145,6 @@ h1 {
 #intro {
 	width: 50%;
 	margin-left: 4%;
-	/*background-color: #540D0D44;*/
 }
 
 #intro h2 {
@@ -101,10 +170,6 @@ h1 {
 	margin-bottom: -25px;
 }
 
-#banner .divider-horz {
-	display: none;
-}
-
 /**************************************************Resume**************************************************/
 #resume {
 	width: 80%;
@@ -112,11 +177,21 @@ h1 {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	background-color: var(--accent-color-three);
+	background-color: #fac7c7; /*var(--accent-color-two);*/
 	color: white;
+	height: 1000px;
+
 }
 
+#resume > section {display: flex}
+
 /**************************************************Media Queries**************************************************/
+@media only screen and (max-width: 1400px) {
+	nav {justify-content: flex-start}
+	nav h2 {margin: 0px 30px}
+	nav h2:after {content: "\00a0 \00a0 \00a0|"}
+}
+
 @media only screen and (max-width: 1200px) {
 	#banner {
 		height: fit-content;
@@ -130,13 +205,8 @@ h1 {
 		margin-bottom: 50px;
 	}
 
-	#intro p:nth-child(4) {
-		text-align: left;
-	}
-
-	#banner .divider-vert {
-		display: none;
-	}
+	#intro p:nth-child(4) {text-align: left}
+	#banner .divider-vert {display: none}
 
 	#banner .divider-horz {
 		margin-top: 65px;
@@ -150,33 +220,35 @@ h1 {
 	}
 }
 
+@media only screen and (max-width: 1000px) {
+	nav {justify-content: space-between}
+	nav h2:after {content: ""}
+	#nav-links {display: none}
+	#dropdown {display: inline-block}
+	#dropdown button {margin-right: 30px}\#dropdown div {display: block} /*8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888*/
+}
+
 @media only screen and (max-width: 745px) { 
-	h1 {
-		font-size: 4.5rem;
-	}
+	h1 {font-size: 4.5rem}
 }
 
 @media only screen and (max-width: 610px) { 
+	nav {justify-content: flex-end}
+	
 	#self-image {
 		height: 350px;
 		width: 350px;
 	}
 
-	h1 {
-		font-size: 3.3rem;
+	nav h2 {
+		content: "";
+		display: none;
 	}
 
-	#intro h2 {
-		font-size: 1.1rem;
-	}
-	
-	#intro p {
-		font-size: 1.1rem;
-	}
-	
-	#intro p:nth-child(1) {
-		font-size: 1.3rem;
-	}
+	h1 {font-size: 3.3rem}
+	#intro h2 {font-size: 1.1rem}
+	#intro p {font-size: 1.1rem}
+	#intro p:nth-child(1) {font-size: 1.3rem}
 
 	#banner .divider-horz {
 		margin-top: 35px;
@@ -185,17 +257,9 @@ h1 {
 }
 
 @media only screen and (max-width: 450px) {
-	h1 {
-		font-size: 2.3rem;
-	}
-
-	#intro h2 {
-		font-size: 0.9rem;
-	}
-	
-	#intro p {
-		font-size: 0.9rem;
-	}
+	h1 {font-size: 2.3rem}
+	#intro h2 {font-size: 0.9rem}
+	#intro p {font-size: 0.9rem}
 	
 	#intro p:nth-child(1) {
 		margin-bottom: -10px;
