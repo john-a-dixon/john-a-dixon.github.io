@@ -41,15 +41,6 @@ li {
 main {
 	background-color: #ED9A9A33;
 }
-
-nav {
-	height: 75px;
-	width: 100%;
-	background-color: var(--main-color);
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-}
 /**************************************************Banner**************************************************/
 
 /*************************Profile Image*************************/
@@ -113,6 +104,36 @@ h1 {
 #banner .divider-horz {
 	display: none;
 }
+/**************************************************Nav**************************************************/
+nav {
+	height: 75px;
+	width: 100%;
+	background-color: var(--main-color);
+	display: flex;
+	position: sticky;
+	top: 0px;
+	justify-content: space-around;
+	align-items: center;
+}
+
+nav h2 {
+	font-family: var(--h1-text);
+	color: white;
+	text-decoration: underline;
+	margin-right: 30%;
+}
+
+nav a {
+	color: white;
+	font-family: var(--header-text);
+	margin: 0px 15px;
+	text-decoration: none;
+	font-size: 1.10rem;
+}
+
+nav a:hover {
+	text-decoration: underline;
+}
 
 /**************************************************Resume**************************************************/
 #resume {
@@ -123,6 +144,8 @@ h1 {
 	align-items: center;
 	background-color: var(--accent-color-three);
 	color: white;
+	height: 1000px;
+
 }
 
 /**************************************************Media Queries**************************************************/
