@@ -100,14 +100,23 @@ nav a:active {
 
 #dropdown div {
 	position: absolute;
-	top: 65px;
-	right: 75px;
+	top: 60px;
+	right: 30px;
 	width: fit-content;
 	height: fit-content;
 	background-color: var(--main-color);
+	text-align: right;
+	padding: 10px;
 }
 
-#dropdown:hover div {display: block}
+#dropdown:hover div {
+	display: flex;
+	flex-direction: column;
+}
+
+#dropdown a {
+	margin: 10px 0px;
+}
 /**************************************************Banner**************************************************/
 /*************************Profile Image*************************/
 #banner {
@@ -237,6 +246,11 @@ h1 {
 	#dropdown button {
 		height: 40px;
 		width: 40px;
+	}
+
+	#dropdown div {
+		top: 50px;
+		right: 30px;
 	}
 
 	#self-image {
