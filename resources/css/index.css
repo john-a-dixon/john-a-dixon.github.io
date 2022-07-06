@@ -46,6 +46,9 @@ nav {
 	height: 75px;
 	width: 100%;
 	background-color: var(--main-color);
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 }
 /**************************************************Banner**************************************************/
 
