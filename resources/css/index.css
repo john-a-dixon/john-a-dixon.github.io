@@ -83,11 +83,25 @@ nav a:active {
 	color: var(--accent-color-two)
 }
 
-#dropdown button {
+#dropdown {
 	display: none;
+}
+
+#dropdown button {
 	height: 50px;
 	width: 50px;
-	background-color: blue;
+	background-color: var(--accent-color-two);
+	background-image: url('../img/menu.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 80%;
+	border-color: transparent;
+	background-blend-mode: multiply;
+	border-radius: 100%;
+}
+
+#dropdown button:active {
+	background-color:aliceblue;
 }
 
 /**************************************************Banner**************************************************/
@@ -204,13 +218,10 @@ h1 {
 }
 
 @media only screen and (max-width: 1000px) {
-	#nav-links {
-		display: none;
-	}
-
-	#drop-down {
-		display: block;
-	}
+	nav {justify-content: space-between}
+	#nav-links {display: none}
+	#dropdown {display: inline-block}
+	#dropdown button {margin-right: 40px;}
 }
 
 @media only screen and (max-width: 745px) { 
