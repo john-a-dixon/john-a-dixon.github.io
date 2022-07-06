@@ -30,13 +30,9 @@
 	width: 30%;
 }
 
-ul {
-	list-style-type: circle;
-}
+ul {list-style-type: circle}
 
-li {
-	margin-left: 25px;
-}
+li {margin-left: 25px}
 
 main {
 	background-color: var(--accent-color-three);
@@ -83,9 +79,7 @@ nav a:active {
 	color: var(--accent-color-two)
 }
 
-#dropdown {
-	display: none;
-}
+#dropdown, #dropdown div, #banner .divider-horz {display: none}
 
 #dropdown button {
 	height: 50px;
@@ -105,8 +99,19 @@ nav a:active {
 }
 
 #dropdown div {
-	display: none;
+	position: absolute;
+	top: 65px;
+	width: 60px;
+	height: 70px;
 }
+
+#dropdown:hover div {
+	display: block;
+}
+/*
+#dropdown:active div {
+	display: block;
+}*/
 /**************************************************Banner**************************************************/
 /*************************Profile Image*************************/
 #banner {
@@ -165,10 +170,6 @@ h1 {
 	margin-bottom: -25px;
 }
 
-#banner .divider-horz {
-	display: none;
-}
-
 /**************************************************Resume**************************************************/
 #resume {
 	width: 80%;
@@ -221,9 +222,10 @@ h1 {
 
 @media only screen and (max-width: 1000px) {
 	nav {justify-content: space-between}
+	nav h2:after {content: ""}
 	#nav-links {display: none}
 	#dropdown {display: inline-block}
-	#dropdown button {margin-right: 30px;}
+	#dropdown button {margin-right: 30px}\#dropdown div {display: block} /*8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888*/
 }
 
 @media only screen and (max-width: 745px) { 
