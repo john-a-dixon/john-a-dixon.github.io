@@ -83,6 +83,13 @@ nav a:active {
 	color: var(--accent-color-two)
 }
 
+#dropdown button {
+	display: none;
+	height: 50px;
+	width: 50px;
+	background-color: blue;
+}
+
 /**************************************************Banner**************************************************/
 
 /*************************Profile Image*************************/
@@ -197,7 +204,13 @@ h1 {
 }
 
 @media only screen and (max-width: 1000px) {
+	#nav-links {
+		display: none;
+	}
 
+	#drop-down {
+		display: block;
+	}
 }
 
 @media only screen and (max-width: 745px) { 
