@@ -225,7 +225,8 @@ h1 {
 	nav h2:after {content: ""}
 	#nav-links {display: none}
 	#dropdown {display: inline-block}
-	#dropdown button {margin-right: 30px}\#dropdown div {display: block} /*8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888*/
+	#dropdown button {margin-right: 15px}
+	/*8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888*/
 }
 
 @media only screen and (max-width: 745px) { 
@@ -233,8 +234,16 @@ h1 {
 }
 
 @media only screen and (max-width: 610px) { 
-	nav {justify-content: flex-end}
+	nav {
+		justify-content: flex-end;
+		height: 60px;
+	}
 	
+	#dropdown button {
+		height: 40px;
+		width: 40px;
+	}
+
 	#self-image {
 		height: 350px;
 		width: 350px;
