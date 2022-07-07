@@ -73,7 +73,7 @@ nav a:active {
 	color: var(--accent-color-two)
 }
 
-#dropdown, #dropdown div {display: none}
+#dropdown {display: none}
 
 #dropdown button {
 	height: 50px;
@@ -92,8 +92,11 @@ nav a:active {
 	background-color:aliceblue;
 }
 
-#dropdown-options {
+#dropdown-links {
+	visibility: hidden;
 	position: absolute;
+	display: flex;
+	flex-direction: column;
 	top: 60px;
 	right: 30px;
 	width: fit-content;
@@ -102,15 +105,12 @@ nav a:active {
 	text-align: right;
 	padding: 10px;
 }
-
+/*
 #dropdown:hover #dropdown-options {
-	display: flex;
-	flex-direction: column;
-}
+	visibility: visible;
+}*/
 
-#dropdown a {
-	margin: 10px 0px;
-}
+#dropdown a {margin: 10px 0px;}
 /**************************************************Banner**************************************************/
 /*************************Profile Image*************************/
 #banner {
