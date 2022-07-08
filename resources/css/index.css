@@ -11,6 +11,7 @@
 	--accent-color-one: #540D0D;
 	--accent-color-two: #ED9A9A;
 	--main-color: #D42222;
+	--main-color-muted: #D4222277;
 	--accent-color-three: #542727;
 	--accent-color-four: #A11A1A;
 	--h1-text: 'Prata', serif;
@@ -105,10 +106,6 @@ nav a:active {
 	text-align: right;
 	padding: 10px;
 }
-/*
-#dropdown:hover #dropdown-options {
-	visibility: visible;
-}*/
 
 #dropdown a {margin: 10px 0px;}
 /**************************************************Banner**************************************************/
@@ -196,22 +193,21 @@ h1 {
 	text-align: center;
 	font-family: var(--header-text);
 	font-size: 1.20rem;
-	border-right: 1px solid var(--main-color);
+	border-right: 3px dashed var(--main-color-muted);
 }
 
 #resume > section > div:nth-child(1) > h3 {
 	width: 100%;
-	border-top: 2px solid var(--main-color);
-	border-left: 2px solid var(--main-color);
+	border-top: 3px dashed var(--main-color);
+	border-left: 3px dashed var(--main-color);
 	padding-top: 20px;
+	color: var(--accent-color-two);
 }
 
 #resume > section > div:nth-child(2) {
 	width: 80%;
 	padding-left: 37.5px;
 	text-align: left;
-	border-left: 1px solid var(--main-color);
-
 }
 
 
