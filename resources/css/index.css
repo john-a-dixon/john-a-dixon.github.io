@@ -286,6 +286,15 @@ a {
 	}
 }
 
+@media only screen and (max-width: 1150px) {
+	#resume > section > div:nth-child(1),
+	#resume > section > div:nth-child(2), 
+	#resume > section > div:nth-child(1) > h3,
+	#resume > section > div:nth-child(2) > h4:nth-child(1) {
+		border: 0px;
+	}
+} 
+
 @media only screen and (max-width: 1000px) {
 	nav {justify-content: space-between}
 	nav h2:after {content: ""}
