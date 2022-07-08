@@ -26,10 +26,6 @@
 	width: 2px;
 }
 
-ul {list-style-type: circle}
-
-li {margin-left: 25px}
-
 main {
 	background-color: var(--accent-color-three);
 	position: relative;
@@ -213,13 +209,13 @@ h1 {
 #resume > section > div:nth-child(2) {width: 80%;} /*Sets  the width of this section*/
 
 #resume > section > div:nth-child(2) > h4:nth-child(1) { /*Only first h4 formatting for border*/
-	margin-top: 25px;
 	padding-top: 25px;
 	border-top: 3px ridge var(--main-color-muted);
 	border-right: 3px ridge var(--main-color-muted);
 }
 
 #resume > section > div:nth-child(2) > h4 { /*Only h4 formatting*/
+	margin-top: 50px;
 	color: var(--main-color);
 	font-size: 1.5rem;
 	font-weight: 700;
@@ -231,6 +227,10 @@ h1 {
 	padding-left: 37.5px;
 }
 
+/*#skills h4::after {
+	content: url('../img/html.png');
+	vertical-align: middle;
+}*/
 /*Formats classes for the formatting of dates, roles, and locations*/
 .location {font-weight: 300;}
 .role {
@@ -240,15 +240,18 @@ h1 {
 .time-frame { 
 	color: var(--accent-color-four);
 }
+
 ul {
 	font-family: var(--p-text);
 	font-size: 1.25rem;
 	font-weight: 700;
 	color: var(--accent-color-two-emph);
 }
+
+li {margin-left: 45px;}
 li::marker {
 	content: '\21D2\00A0';
-	font-size: 1.5rem;
+	font-size: 1.75rem;
 }
 /**************************************************Media Queries**************************************************/
 @media only screen and (max-width: 1400px) {
