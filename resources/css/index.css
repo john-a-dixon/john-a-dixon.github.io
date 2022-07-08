@@ -182,8 +182,10 @@ h1 {
 
 }
 
+#skills {margin-top: 50px;}
+#education { margin-bottom: 50px;}
+
 #resume > section {
-	margin: 50px 0px;
 	color: var(--accent-color-four);
 	display: flex;
 	height: 500px;
@@ -192,12 +194,19 @@ h1 {
 
 #resume > section > div:nth-child(1) {
 	width: 20%;
-	padding-right: 37.5px;
-	text-align: right;
+	text-align: center;
 	font-family: var(--header-text);
 	font-size: 1.20rem;
 	border-right: 1px solid var(--main-color);
 }
+
+#resume > section > div:nth-child(1) > h3 {
+	width: 100%;
+	border-top: 2px solid var(--main-color);
+	border-left: 2px solid var(--main-color);
+	padding-top: 20px;
+}
+
 #resume > section > div:nth-child(2) {
 	width: 80%;
 	padding-left: 37.5px;
