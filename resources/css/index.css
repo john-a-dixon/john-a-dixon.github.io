@@ -183,13 +183,23 @@ h1 {
 }
 
 #resume > section {
+	margin: 50px 0px;
+	color: var(--accent-color-four);
 	display: flex;
 	height: 500px;
 	width: 95%;
 }
 
-#resume > section > div:nth-child(1) {width: 20%;}
-#resume > section > div:nth-child(2) {width: 80%;}
+#resume > section > div:nth-child(1) {
+	width: 20%;
+	text-align: right;
+	font-family: var(--header-text);
+	font-size: 1.20rem;
+}
+#resume > section > div:nth-child(2) {
+	width: 80%;
+	text-align: left;
+}
 
 
 /**************************************************Media Queries**************************************************/
