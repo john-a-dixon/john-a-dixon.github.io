@@ -176,7 +176,7 @@ h1 {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	background-color: #fac7c7; /*var(--accent-color-two);*/
+	background-color: #ffd5d5;
 	color: white;
 	height: fit-content;
 
