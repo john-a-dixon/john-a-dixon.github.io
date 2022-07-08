@@ -245,6 +245,7 @@ ul {
 }
 
 li {margin-left: 45px;}
+
 li::marker {
 	content: '\21D2\00A0';
 	font-size: 1.75rem;
@@ -286,6 +287,32 @@ a {
 	}
 }
 
+@media only screen and (max-width: 1150px) {
+	#resume > section > div:nth-child(1),
+	#resume > section > div:nth-child(2), 
+	#resume > section > div:nth-child(1) > h3,
+	#resume > section > div:nth-child(2) > h4:nth-child(1) {border: 0px;}
+	#resume > section > div:nth-child(1),
+	#resume > section > div:nth-child(2) {width: 100%;} 
+	#resume > section > div:nth-child(2) > * {padding-left: 0px;}
+	#skills {margin-top: 0;}
+	#resume > section > div:nth-child(1) > h3 {
+		margin-top: 40px;
+		margin-bottom: 25px;
+		font-size: 2rem;
+		text-decoration: underline;
+		font-style: italic;
+	}
+	#resume > section > div:nth-child(2) > h4:nth-child(1) {
+		padding-top: 0;
+		margin-top: 0;
+	}
+	#resume > section {
+		display: block;
+		width: 90%;
+	}
+} 
+
 @media only screen and (max-width: 1000px) {
 	nav {justify-content: space-between}
 	nav h2:after {content: ""}
@@ -299,7 +326,10 @@ a {
 }
 
 @media only screen and (max-width: 745px) { 
+	#resume > section > div:nth-child(1) > h3 {font-size: 1.75rem;}
+	#resume > section > div:nth-child(2) > h4 {font-size: 1.25rem;}
 	h1 {font-size: 4.5rem}
+
 }
 
 @media only screen and (max-width: 670px) { 
@@ -308,6 +338,7 @@ a {
 
 @media only screen and (max-width: 625px) { 
 	h1 {font-size: 4rem}
+	li {margin-left: 35px;}
 }
 
 @media only screen and (max-width: 610px) { 
@@ -341,18 +372,24 @@ a {
 	#intro h2 {font-size: 1.1rem}
 	#intro p {font-size: 1.1rem}
 	#intro p:nth-child(1) {font-size: 1.3rem}
-
+	li::marker {font-size: 1.5rem;}
+	li {margin-left: 30px;}
+	
 }
 
 @media only screen and (max-width: 485px) { 
 	h1 {font-size: 3.0rem}
+	#resume > section > div:nth-child(1) > h3 {font-size: 1.50rem;}
+	#resume > section > div:nth-child(2) > h4 {font-size: 1.0rem;}
+	ul {font-size: 0.9rem;}
+	li::marker {font-size: 1.25rem;}
 }
 
 @media only screen and (max-width: 450px) {
 	h1 {font-size: 2.3rem}
 	#intro h2 {font-size: 0.9rem}
 	#intro p {font-size: 0.9rem}
-	
+	li {margin-left: 45px;}
 	#intro p:nth-child(1) {
 		margin-bottom: -10px;
 		font-size: 1.0rem;
@@ -362,11 +399,32 @@ a {
 		height: 300px;
 		width: 300px;
 	}
+
+	li {margin-left: 25px;}
+}
+
+@media only screen and (max-width: 400px) {
+	#resume > section > div:nth-child(1) > h3 {font-size: 1.30rem;}
+	#resume > section > div:nth-child(2) > h4 {font-size: 0.90rem;}
+	ul {font-size: 0.8rem;}
+	li::marker {font-size: 1.25rem;}
 }
 
 @media only screen and (max-width: 350px) {
+	#resume > section > div:nth-child(1) > h3 {font-size: 1.20rem;}
+	#resume > section > div:nth-child(2) > h4 {font-size: 0.80rem;}
+	ul {font-size: 0.70rem;}
 	#self-image {
 		height: 250px;
 		width: 250px;
 	}
+	li::marker {font-size: 1.00rem;}
 }
+
+@media only screen and (max-width: 325px) {
+	#resume > section > div:nth-child(1) > h3 {font-size: 1.10rem;}
+	#resume > section > div:nth-child(2) > h4 {font-size: 0.70rem;}
+	ul {font-size: 0.60rem;}
+	li::marker {font-size: 0.9rem;}
+}
+
