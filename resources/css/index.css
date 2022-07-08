@@ -226,11 +226,6 @@ h1 {
 	line-height: 1.5;
 	padding-left: 37.5px;
 }
-
-/*#skills h4::after {
-	content: url('../img/html.png');
-	vertical-align: middle;
-}*/
 /*Formats classes for the formatting of dates, roles, and locations*/
 .location {font-weight: 300;}
 .role {
