@@ -194,6 +194,7 @@ h1 {
 	font-family: var(--header-text);
 	font-size: 1.20rem;
 	border-right: 3px dashed var(--main-color-muted);
+	color: var(--accent-color-two);
 }
 
 #resume > section > div:nth-child(1) > h3 {
@@ -201,7 +202,6 @@ h1 {
 	border-top: 3px dashed var(--main-color);
 	border-left: 3px dashed var(--main-color);
 	padding-top: 20px;
-	color: var(--accent-color-two);
 }
 
 #resume > section > div:nth-child(2) {
@@ -210,7 +210,19 @@ h1 {
 	text-align: left;
 }
 
+#resume > section > div:nth-child(2) > h4 {
+	font-family: var(--header-text);
+	font-size: 1.5rem;
+	font-weight: 700;
+	color: var(--accent-color-two);
+	line-height: 1.5;
+}
 
+.location {font-weight: 300;}
+.role {
+	font-style: italic;
+	font-weight: 400;
+}
 /**************************************************Media Queries**************************************************/
 @media only screen and (max-width: 1400px) {
 	nav {justify-content: flex-start}
