@@ -178,11 +178,14 @@ h1 {
 	align-items: center;
 	background-color: #fac7c7; /*var(--accent-color-two);*/
 	color: white;
-	height: 1000px;
+	height: fit-content;
 
 }
 
-#resume > section {display: flex}
+#resume > section {
+	display: flex;
+	height: 500px;
+}
 
 /**************************************************Media Queries**************************************************/
 @media only screen and (max-width: 1400px) {
