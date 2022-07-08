@@ -185,7 +185,12 @@ h1 {
 #resume > section {
 	display: flex;
 	height: 500px;
+	width: 95%;
 }
+
+#resume > section > div:nth-child(1) {width: 20%;}
+#resume > section > div:nth-child(2) {width: 80%;}
+
 
 /**************************************************Media Queries**************************************************/
 @media only screen and (max-width: 1400px) {
