@@ -10,6 +10,7 @@
 	font-size: 16px;
 	--accent-color-one: #540D0D;
 	--accent-color-two: #ED9A9A;
+	--accent-color-two-emph: #f5aeae;
 	--main-color: #D42222;
 	--main-color-muted: #D4222277;
 	--accent-color-three: #542727;
@@ -188,40 +189,66 @@ h1 {
 	width: 95%;
 }
 
+/*************************Resume title section*************************/
+#resume > section h3,
+#resume > section h4,
+#resume > section h5 {font-family: var(--header-text);}
+
 #resume > section > div:nth-child(1) {
 	width: 20%;
 	text-align: center;
-	font-family: var(--header-text);
 	font-size: 1.20rem;
-	border-right: 3px dashed var(--main-color-muted);
-	color: var(--accent-color-two);
+	border-right: 3px ridge var(--main-color-muted);
+	color: var(--main-color);
 }
 
 #resume > section > div:nth-child(1) > h3 {
 	width: 100%;
-	border-top: 3px dashed var(--main-color);
-	border-left: 3px dashed var(--main-color);
-	padding-top: 20px;
+	border-top: 3px ridge var(--main-color-muted);
+	border-left: 3px ridge var(--main-color-muted);
+	padding-top: 25px;
 }
 
-#resume > section > div:nth-child(2) {
-	width: 80%;
-	padding-left: 37.5px;
-	text-align: left;
+/*************************Resume info section*************************/
+#resume > section > div:nth-child(2) {width: 80%;} /*Sets  the width of this section*/
+
+#resume > section > div:nth-child(2) > h4:nth-child(1) { /*Only first h4 formatting for border*/
+	margin-top: 25px;
+	padding-top: 25px;
+	border-top: 3px ridge var(--main-color-muted);
+	border-right: 3px ridge var(--main-color-muted);
 }
 
-#resume > section > div:nth-child(2) > h4 {
-	font-family: var(--header-text);
+#resume > section > div:nth-child(2) > h4 { /*Only h4 formatting*/
+	color: var(--main-color);
 	font-size: 1.5rem;
 	font-weight: 700;
-	color: var(--accent-color-two);
-	line-height: 1.5;
 }
 
+#resume > section > div:nth-child(2) > * { /*Formatts all of the elements within this section*/
+	text-align: left;
+	line-height: 1.5;
+	padding-left: 37.5px;
+}
+
+/*Formats classes for the formatting of dates, roles, and locations*/
 .location {font-weight: 300;}
 .role {
 	font-style: italic;
 	font-weight: 400;
+}
+.time-frame { 
+	color: var(--accent-color-four);
+}
+ul {
+	font-family: var(--p-text);
+	font-size: 1.25rem;
+	font-weight: 700;
+	color: var(--accent-color-two-emph);
+}
+li::marker {
+	content: '\21D2\00A0';
+	font-size: 1.5rem;
 }
 /**************************************************Media Queries**************************************************/
 @media only screen and (max-width: 1400px) {
