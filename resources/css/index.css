@@ -334,6 +334,7 @@ a {
 
 @media only screen and (max-width: 670px) { 
 	h1 {font-size: 4.25rem}
+	#resume {width: 100%;}
 }
 
 @media only screen and (max-width: 625px) { 
@@ -407,7 +408,8 @@ a {
 	#resume > section > div:nth-child(1) > h3 {font-size: 1.30rem;}
 	#resume > section > div:nth-child(2) > h4 {font-size: 0.90rem;}
 	ul {font-size: 0.8rem;}
-	li::marker {font-size: 1.25rem;}
+	li::marker {font-size: 1.10rem;}
+	li {margin-left: 20px;}
 }
 
 @media only screen and (max-width: 350px) {
@@ -419,12 +421,13 @@ a {
 		width: 250px;
 	}
 	li::marker {font-size: 1.00rem;}
+	li {margin-left: 15px;}
 }
 
 @media only screen and (max-width: 325px) {
 	#resume > section > div:nth-child(1) > h3 {font-size: 1.10rem;}
 	#resume > section > div:nth-child(2) > h4 {font-size: 0.70rem;}
 	ul {font-size: 0.60rem;}
-	li::marker {font-size: 0.9rem;}
+	li::marker {font-size: 0.75rem;}
 }
 
