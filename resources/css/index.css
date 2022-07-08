@@ -10,7 +10,9 @@
 	font-size: 16px;
 	--accent-color-one: #540D0D;
 	--accent-color-two: #ED9A9A;
+	--accent-color-two-emph: #f5aeae;
 	--main-color: #D42222;
+	--main-color-muted: #D4222277;
 	--accent-color-three: #542727;
 	--accent-color-four: #A11A1A;
 	--h1-text: 'Prata', serif;
@@ -23,10 +25,6 @@
 	height: 70%;
 	width: 2px;
 }
-
-ul {list-style-type: circle}
-
-li {margin-left: 25px}
 
 main {
 	background-color: var(--accent-color-three);
@@ -105,10 +103,6 @@ nav a:active {
 	text-align: right;
 	padding: 10px;
 }
-/*
-#dropdown:hover #dropdown-options {
-	visibility: visible;
-}*/
 
 #dropdown a {margin: 10px 0px;}
 /**************************************************Banner**************************************************/
@@ -176,14 +170,92 @@ h1 {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	background-color: #fac7c7; /*var(--accent-color-two);*/
-	color: white;
-	height: 1000px;
+	background-color: #270c0c;
+	height: fit-content;
 
 }
 
-#resume > section {display: flex}
+#skills {margin-top: 50px;}
+#education { margin-bottom: 50px;}
 
+#resume > section {
+	color: var(--accent-color-four);
+	display: flex;
+	height: fit-content;
+	width: 95%;
+}
+
+/*************************Resume title section*************************/
+#resume > section h3,
+#resume > section h4,
+#resume > section h5 {font-family: var(--header-text);}
+
+#resume > section > div:nth-child(1) {
+	width: 20%;
+	text-align: center;
+	font-size: 1.20rem;
+	border-right: 3px ridge var(--main-color-muted);
+	color: var(--main-color);
+}
+
+#resume > section > div:nth-child(1) > h3 {
+	width: 100%;
+	border-top: 3px ridge var(--main-color-muted);
+	border-left: 3px ridge var(--main-color-muted);
+	padding-top: 25px;
+}
+
+/*************************Resume info section*************************/
+#resume > section > div:nth-child(2) {width: 80%;} /*Sets  the width of this section*/
+
+#resume > section > div:nth-child(2) > h4:nth-child(1) { /*Only first h4 formatting for border*/
+	padding-top: 25px;
+	border-top: 3px ridge var(--main-color-muted);
+	border-right: 3px ridge var(--main-color-muted);
+}
+
+#resume > section > div:nth-child(2) > h4 { /*Only h4 formatting*/
+	margin-top: 50px;
+	color: var(--main-color);
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+
+#resume > section > div:nth-child(2) > * { /*Formatts all of the elements within this section*/
+	text-align: left;
+	line-height: 1.5;
+	padding-left: 37.5px;
+}
+/*Formats classes for the formatting of dates, roles, and locations*/
+.location {font-weight: 300;}
+.role {
+	font-style: italic;
+	font-weight: 400;
+}
+.time-frame { 
+	color: var(--accent-color-four);
+}
+.underline {text-decoration: underline;}
+
+ul {
+	font-family: var(--p-text);
+	font-size: 1.25rem;
+	font-weight: 700;
+	color: var(--accent-color-two-emph);
+}
+
+li {margin-left: 45px;}
+
+li::marker {
+	content: '\21D2\00A0';
+	font-size: 1.75rem;
+}
+
+a {
+	text-decoration: none;
+	color: var(--main-color);
+	text-decoration: underline;
+}
 /**************************************************Media Queries**************************************************/
 @media only screen and (max-width: 1400px) {
 	nav {justify-content: flex-start}
@@ -215,6 +287,32 @@ h1 {
 	}
 }
 
+@media only screen and (max-width: 1150px) {
+	#resume > section > div:nth-child(1),
+	#resume > section > div:nth-child(2), 
+	#resume > section > div:nth-child(1) > h3,
+	#resume > section > div:nth-child(2) > h4:nth-child(1) {border: 0px;}
+	#resume > section > div:nth-child(1),
+	#resume > section > div:nth-child(2) {width: 100%;} 
+	#resume > section > div:nth-child(2) > * {padding-left: 0px;}
+	#skills {margin-top: 0;}
+	#resume > section > div:nth-child(1) > h3 {
+		margin-top: 40px;
+		margin-bottom: 25px;
+		font-size: 2rem;
+		text-decoration: underline;
+		font-style: italic;
+	}
+	#resume > section > div:nth-child(2) > h4:nth-child(1) {
+		padding-top: 0;
+		margin-top: 0;
+	}
+	#resume > section {
+		display: block;
+		width: 90%;
+	}
+} 
+
 @media only screen and (max-width: 1000px) {
 	nav {justify-content: space-between}
 	nav h2:after {content: ""}
@@ -228,7 +326,10 @@ h1 {
 }
 
 @media only screen and (max-width: 745px) { 
+	#resume > section > div:nth-child(1) > h3 {font-size: 1.75rem;}
+	#resume > section > div:nth-child(2) > h4 {font-size: 1.25rem;}
 	h1 {font-size: 4.5rem}
+
 }
 
 @media only screen and (max-width: 670px) { 
@@ -237,6 +338,7 @@ h1 {
 
 @media only screen and (max-width: 625px) { 
 	h1 {font-size: 4rem}
+	li {margin-left: 35px;}
 }
 
 @media only screen and (max-width: 610px) { 
@@ -270,18 +372,24 @@ h1 {
 	#intro h2 {font-size: 1.1rem}
 	#intro p {font-size: 1.1rem}
 	#intro p:nth-child(1) {font-size: 1.3rem}
-
+	li::marker {font-size: 1.5rem;}
+	li {margin-left: 30px;}
+	
 }
 
 @media only screen and (max-width: 485px) { 
 	h1 {font-size: 3.0rem}
+	#resume > section > div:nth-child(1) > h3 {font-size: 1.50rem;}
+	#resume > section > div:nth-child(2) > h4 {font-size: 1.0rem;}
+	ul {font-size: 0.9rem;}
+	li::marker {font-size: 1.25rem;}
 }
 
 @media only screen and (max-width: 450px) {
 	h1 {font-size: 2.3rem}
 	#intro h2 {font-size: 0.9rem}
 	#intro p {font-size: 0.9rem}
-	
+	li {margin-left: 45px;}
 	#intro p:nth-child(1) {
 		margin-bottom: -10px;
 		font-size: 1.0rem;
@@ -291,11 +399,32 @@ h1 {
 		height: 300px;
 		width: 300px;
 	}
+
+	li {margin-left: 25px;}
+}
+
+@media only screen and (max-width: 400px) {
+	#resume > section > div:nth-child(1) > h3 {font-size: 1.30rem;}
+	#resume > section > div:nth-child(2) > h4 {font-size: 0.90rem;}
+	ul {font-size: 0.8rem;}
+	li::marker {font-size: 1.25rem;}
 }
 
 @media only screen and (max-width: 350px) {
+	#resume > section > div:nth-child(1) > h3 {font-size: 1.20rem;}
+	#resume > section > div:nth-child(2) > h4 {font-size: 0.80rem;}
+	ul {font-size: 0.70rem;}
 	#self-image {
 		height: 250px;
 		width: 250px;
 	}
+	li::marker {font-size: 1.00rem;}
 }
+
+@media only screen and (max-width: 325px) {
+	#resume > section > div:nth-child(1) > h3 {font-size: 1.10rem;}
+	#resume > section > div:nth-child(2) > h4 {font-size: 0.70rem;}
+	ul {font-size: 0.60rem;}
+	li::marker {font-size: 0.9rem;}
+}
+
