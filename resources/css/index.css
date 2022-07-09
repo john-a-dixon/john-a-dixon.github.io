@@ -163,6 +163,36 @@ h1 {
 	margin-bottom: -25px;
 }
 
+/*************************Contacts Buttons*************************/
+#banner button { /*Formatting for the contact buttons.*/
+	height: 50px;
+	width: 50px;
+	background-color: #ED9A9A;
+	border-color: transparent;
+	border-radius: 50%;
+	margin-top: 35px;
+}
+
+#banner button:hover {cursor: pointer;}
+
+#banner a[href*="github"] {
+	margin-left: 10px;
+}
+
+#banner a[href*="outlook"] button {
+	background-image: url('../img/email.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#banner a[href*="github"] button{
+	background-image: url('../img/github.png');
+	background-size: 75%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-blend-mode: multiply;
+}
 /**************************************************Resume**************************************************/
 #resume {
 	width: 80%;
