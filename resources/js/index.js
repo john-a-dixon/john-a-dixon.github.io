@@ -1,9 +1,9 @@
 const dropDownToggle = document.getElementById('dropdown-toggle');
 const dropDownLinks = document.getElementById('dropdown-links')
 
-/****************************************A Simple fix for my problem, though I do not know what it does just yet.****************************************/
-const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
-async function delayHide() {
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms)); //Function that returns a promise which resolves after certain amount of time (ms).
+
+async function delayHide() { //Asynchronous function that waits for the sleep function to resolve after 50ms.
     await sleep(50);
     dropDownLinks.style.visibility = 'hidden';
 }
